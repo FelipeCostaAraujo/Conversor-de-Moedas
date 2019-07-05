@@ -18,7 +18,7 @@ void main() async {
     print(e);
   }
 
-  print(await getData());
+  //print(await getData());
 
   runApp(MaterialApp(
     title: 'Conversor de Moedas',
@@ -161,6 +161,6 @@ Widget buildTextField(String label,String prefix, TextEditingController controll
     ),
     style: TextStyle(color: Colors.amber,fontSize: 25.0),
     onChanged: functionONChanged,
-    keyboardType: TextInputType.number,
+    keyboardType: TextInputType.numberWithOptions(decimal: true),
   );
 }
